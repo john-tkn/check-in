@@ -1,0 +1,17 @@
+Campsites
+	Campsite name pic x(10)
+	camp name pic x (pa, ls, sm)
+	capacity pic 999
+	capacity left pic 999
+Campers
+	troop
+		area/gender 9
+		id	999
+	signed-up
+		adults 999
+		youth  999
+		total 999
+	actual
+		adults
+		youth
+
