@@ -47,4 +47,19 @@
            05 LINE 24 COL 1 PIC X(80) USING WS-MSG                              
            FOREGROUND-COLOR IS 2.                                               
        PROCEDURE DIVISION.                                                      
-       200-ADD-CAMP-MAIN.
+       200-ADD-CAMP-MAIN.    
+           DISPLAY CLEAR-SCREEN                                                                                                                           
+           MOVE SPACES TO WS-MSG                                                                                  
+           DISPLAY CLEAR-SCREEN                                            
+           DISPLAY SS-MESSAGE                                                       
+           DISPLAY SS-CAMP-ENTRY                                                            
+           ACCEPT SS-CAMP-ENTRY                                                                                                                                        
+           IF KEY-STATUS = 1009 OR KEY-STATUS = 0000                                                    
+                   PERFORM 210-ADD-CAMPSITE                                                                             
+           END-IF                                                                                     
+           IF KEY-STATUS = 1003                                                                       
+                   EVALUATE WS-CAMP-MAIN-CAMP       
+
+
+                                                                      
+           

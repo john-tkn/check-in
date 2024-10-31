@@ -66,10 +66,10 @@
                       DISPLAY SS-100-ADD-MENU
                       ACCEPT SS-100-ADD-MENU
                       PERFORM 122-ADD-MENU
-              WHEN 1
-                      CALL '200-ADD-CAMP-MAIN'
+      *       WHEN 1
+      *               CALL '200-ADD-CAMP-MAIN' USING WS-RETURN
               WHEN 2
-                      CALL '300-ADD-CAMPER'
+                      CALL '300-ADD-CAMPER' USING WS-RETURN
               WHEN OTHER
                    MOVE ZEROES TO MENU-SUB2
                    MOVE "INVALID SELECTION" TO WS-MSG
