@@ -68,6 +68,7 @@
                 IF KEY-STATUS = 1003
                         EVALUATE WS-CAMPER-TROOP
                         WHEN ZEROS 
+                         DISPLAY CLEAR-SCREEN
                          EXIT PROGRAM 
            WHEN NUMERIC PERFORM 301-CLEAR-CAMPER-DATA-ENTRY
                        

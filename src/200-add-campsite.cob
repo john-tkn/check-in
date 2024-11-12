@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.                                                 
-       PROGRAM-ID. 200-ADD-CAMPSITE.                                            
+       PROGRAM-ID. 200-ADD-CAMP-MAIN.
        AUTHOR. JOHN CHIRPICH.                                                   
        DATE-WRITTEN. OCT 31, 2024.                                              
        ENVIRONMENT DIVISION.                                                    
@@ -92,6 +92,7 @@
            IF KEY-STATUS = 1003
                    EVALUATE WS-CAMP-TOTAL-CAPACITY  
                            WHEN ZEROES
+                                   DISPLAY CLEAR-SCREEN
                                    EXIT PROGRAM
                            WHEN NOT ZEROES  
                                    PERFORM 201-CLEAR-DATA
